@@ -32,7 +32,7 @@ class _EmployeeListState extends State<EmployeeList> {
 
   FutureOr reloadDataEmployee(dynamic value) {
     setState(() {
-      employee = employee;
+      selectAllEmployee();
     });
   }
 
