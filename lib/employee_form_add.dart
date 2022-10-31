@@ -143,9 +143,9 @@ class _EmployeeeFormAddState extends State<EmployeeeFormAdd> {
                       name.text,
                       phone.text,
                       email.text,
-                      birthday.text,
-                      gender,
                       address.text,
+                      gender,
+                      birthday.text,
                       "-"));
 
                   List<EmployeeModel> employee =
@@ -187,7 +187,7 @@ class _EmployeeeFormAddState extends State<EmployeeeFormAdd> {
       setState(() {
         if (value == null) return;
 
-        final DateFormat formatter = DateFormat('dd-MM-yyyy');
+        final DateFormat formatter = DateFormat.yMMMMd('en_US');
         final String formattedDate = formatter.format(value);
         birthday.text = formattedDate;
       });

@@ -51,18 +51,19 @@ class _EmployeeListState extends State<EmployeeList> {
         backgroundColor: Colors.indigo,
         actions: <Widget>[
           Padding(
-              padding: const EdgeInsets.only(right: 20.0),
-              child: GestureDetector(
-                onTap: () {
-                  //Navigator.pushNamed(context, ‘employee_form_add');
-                  Navigator.pushNamed(context, 'employee_form_add')
-                      .then(reloadDataEmployee);
-                },
-                child: const Icon(
-                  Icons.add,
-                  size: 26.0,
-                ),
-              )), // GestureDetector // Padding
+            padding: const EdgeInsets.only(right: 20.0),
+            child: GestureDetector(
+              onTap: () {
+                //Navigator.pushNamed(context, ‘employee_form_add');
+                Navigator.pushNamed(context, 'employee_form_add')
+                    .then(reloadDataEmployee);
+              },
+              child: const Icon(
+                Icons.add,
+                size: 26.0,
+              ),
+            ),
+          ),
         ], // <Widget>[]
       ), // AppBar
       body: ListView.builder(

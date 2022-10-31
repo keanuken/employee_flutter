@@ -127,6 +127,7 @@ class _EmployeeDetailState extends State<EmployeeDetail> {
               ),
             ),
           ),
+          //Remove Data
           Padding(
             padding: const EdgeInsets.only(right: 20.0),
             child: GestureDetector(
